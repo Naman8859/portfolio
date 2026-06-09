@@ -1,0 +1,940 @@
+/* basic reset aur default settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* website ke saare colors yaha store kiye hain */
+:root {
+    --gray-green: #131D1C;
+    --dark-orange: #F37D2F;
+    --yellow: #BC914C;
+    --skin-color: #FFF0E1;
+    --white: #e9e9e9;
+    --black: #0c0c0c;
+}
+
+
+/* ================= NAVBAR SECTION ================= */
+
+/* navbar ka main container */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-green);
+    color: white;
+    padding: 15px 70px;
+    width: 100%;
+}
+
+/* navbar ke links ka container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Home, About Us, Why Choose jaise links */
+.navbar h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+
+/* logo aur restaurant name ko ek line me rakhne ke liye */
+.logoImg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* logo image ka size */
+.logoImg img {
+    height: 60px;
+    width: 45px;
+}
+
+
+/* website ke saare buttons ki common styling */
+button {
+    border: none;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 16px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* mobile view me hamburger icon hidden rahega */
+.hamburger {
+    display: none;
+}
+
+/* hamburger icon ki image */
+.hamburger img {
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+
+/* navbar ke niche wali white line */
+.break {
+    height: 1px;
+    background-color: var(--white);
+    width: 100%;
+}
+
+
+/* ================= NAVBAR RESPONSIVE ================= */
+
+/* tablet aur mobile ke liye */
+@media (max-width:1120px) {
+
+    /* navbar ki side padding kam kar di */
+    nav {
+        padding: 15px 30px;
+    }
+
+    /* navbar links hide kar diye */
+    .navbar {
+        display: none;
+    }
+
+    /* view menu button hide kar diya */
+    .menu {
+        display: none;
+    }
+
+    /* hamburger icon show kar diya */
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* ================= HERO SECTION ================= */
+
+/* hero section ka main container
+   left side text aur right side image ko ek row me rakhta hai */
+.hero {
+    background-color: var(--gray-green);
+    color: var(--white);
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+
+/* hero ke left side ka content
+   heading, paragraph aur button */
+.hero .left {
+    padding-left: 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* main heading */
+.hero .left h1 {
+    padding: 0 0 15px 0;
+    font-size: 75px;
+    white-space: wrap;
+    text-transform: capitalize;
+}
+
+/* heading ke highlighted words */
+.hero .left h1 .rangila {
+    color: var(--dark-orange);
+}
+
+/* book your table button ko left side rakhne ke liye */
+.hero .left button {
+    align-self: flex-start;
+}
+
+/* heading ke niche wala description text */
+.hero .left p {
+    width: 90%;
+    align-self: flex-start;
+    padding-bottom: 20px;
+}
+
+/* hero ke right side ka container */
+.hero .right {
+    display: flex;
+    align-items: center;
+}
+
+/* food image */
+.hero .right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* image ke niche wala free remix button */
+.hero .right button {
+    align-self: flex-end;
+}
+
+
+/* ================= HERO RESPONSIVE ================= */
+
+/* tablet aur choti screens ke liye */
+@media (max-width:1120px) {
+
+    /* image aur text ko upar niche kar diya */
+    .hero {
+        flex-direction: column;
+    }
+
+    /* left content ko center me le aaye */
+    .hero .left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 80px;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    /* heading responsive size me */
+    .hero .left h1 {
+        font-size: 6vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* paragraph responsive size me */
+    .hero .left p {
+        font-size: 3vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* button center me */
+    .hero .left button {
+        text-align: center;
+        align-self: center;
+    }
+
+    /* image section ko center me rakha */
+    .hero .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* free remix button image ke corner me */
+    .hero .right button {
+        align-self: flex-end;
+        margin-top: -40px;
+        margin-right: 10px;
+    }
+}
+
+
+/* ================= MOBILE REMIX BUTTON ================= */
+
+/* mobile ke liye alag button container
+   desktop par hidden rahega */
+.button {
+    width: 100%;
+    display: none;
+    justify-content: end;
+}
+
+/* mobile screen ke liye */
+@media (max-width:800px) {
+
+    /* image wala remix button hide kar diya */
+    .hero .right button {
+        display: none;
+    }
+
+    /* image ko responsive rakha */
+    .hero .right img {
+        min-width: auto;
+    }
+
+    /* niche wala remix button show kar diya */
+    .button {
+        display: flex;
+        padding-right: 20px;
+    }
+}
+
+/* ================= ABOUT SECTION ================= */
+
+/* hero section ke baad start hone wala about section */
+.main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* left side ke content ko column me arrange karne ke liye */
+.main .first .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* about section ka main container
+   left me text aur right me chef image */
+.main .first {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* orange color wala "About" text */
+.main .first .left #about {
+    color: var(--dark-orange);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* about section ka paragraph */
+.main .first .left p {
+    font-size: 20px;
+}
+
+/* left side ka pura content area */
+.main .first .left {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 80px;
+}
+
+/* main heading
+   "Every Celebration Remarkable" */
+.main .first .left h1 {
+    font-size: 66px;
+}
+
+/* stats wale boxes ka grid
+   110+, 120+, 30+, 100+ */
+.main .first .left .grid {
+    padding-top: 50px;
+    display: grid;
+    height: 50%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* right side me chef image wala area */
+.main .first .right {
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    width: 50%;
+}
+
+/* chef image */
+.main .first .right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* mobile view me dikhne wali divider line */
+.main .first .breaker {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+}
+
+
+/* ================= ABOUT RESPONSIVE ================= */
+
+/* tablet aur small laptop screens ke liye */
+@media (max-width:1120px) {
+
+    /* image aur content ko upar niche kar diya */
+    .main .first {
+        flex-direction: column;
+        align-items: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    /* content ko center me align kiya */
+    .main .first .left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+    }
+
+    /* About text center me */
+    .main .first .left #about {
+        text-align: center;
+    }
+
+    /* heading responsive size me */
+    .main .first .left h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    /* paragraph responsive size me */
+    .main .first .left p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    /* book table button center me */
+    .main .first .booktable-btn {
+        align-self: center;
+    }
+
+    /* stats boxes ke beech gap */
+    .grid {
+        gap: 30px;
+    }
+
+    /* har stat item ko center me */
+    .grid-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* stats number */
+    .grid-center h1 {
+        font-size: 50px;
+    }
+
+    /* stats description */
+    .grid-center h3 {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* stats description responsive size me */
+    .main .first .left .grid .grid-center h3 {
+        font-size: 2vw;
+    }
+
+    /* image ko center me le aaye */
+    .main .first .right {
+        width: 100%;
+        padding: 50px 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* ================= ABOUT MOBILE VIEW ================= */
+
+@media (max-width:800px) {
+
+    /* 2x2 grid ko ek column me convert kar diya */
+    .main .first .left .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* stats text mobile me readable rahe */
+    .main .first .left .grid .grid-center h3 {
+        line-height: 30px;
+        font-size: 4vw;
+    }
+
+    /* chef image hide kar di */
+    .main .first .right {
+        display: none;
+    }
+
+    /* image ki jagah divider line show hogi */
+    .main .first .breaker {
+        display: flex;
+    }
+}
+
+/* ================= FOOD CATEGORIES SECTION ================= */
+
+/* pasta, desserts aur chef specials wala section */
+.second {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px 140px;
+    justify-content: space-around;
+}
+
+/* tino cards ko grid me arrange kiya hai */
+.secondgrid {
+    display: grid;
+    gap: 190px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* har card ki image */
+.secondgrid .grid-img img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* ek single food card */
+.secondgrid .grid-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* card heading
+   jaise Pasta & Noodles */
+.secondgrid .grid-img h2 {
+    font-weight: 550;
+}
+
+/* card description */
+.secondgrid .grid-img h5 {
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* ================= FOOD CATEGORIES RESPONSIVE ================= */
+
+/* tablet aur small laptop screens ke liye */
+@media (max-width:1120px) {
+
+    /* side padding kam kar di */
+    .second {
+        width: 100%;
+        padding: 80px 50px;
+    }
+
+    /* 3 columns se 2 columns kar diya */
+    .secondgrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* description text responsive */
+    .secondgrid .grid-img h5 {
+        text-align: center;
+        font-size: 2vw;
+        white-space: wrap;
+    }
+}
+
+
+/* ================= FOOD CATEGORIES MOBILE VIEW ================= */
+
+@media (max-width:800px) {
+
+    /* saare cards ek ke niche ek */
+    .secondgrid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    /* mobile ke liye text size */
+    .secondgrid .grid-img h5 {
+        text-align: center;
+        font-size: 3vw;
+        white-space: wrap;
+    }
+}
+
+/* ================= WHY CHOOSE US SECTION ================= */
+
+/* why choose us wala pura section */
+.third {
+    background-color: var(--skin-color);
+    display: flex;
+    min-height: 700px;
+    width: 100%;
+    padding: 60px 20px;
+}
+
+/* left side ka content
+   heading aur feature cards */
+.third .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 100px;
+    gap: 37px;
+}
+
+/* orange color wala heading text */
+.third .left h6 {
+    width: 100%;
+    font-size: 18px;
+    color: var(--dark-orange);
+}
+
+/* main heading
+   More Than Dining It's Sofra */
+.third .left h1 {
+    font-size: 66px;
+}
+
+/* right side image section */
+.third .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 55px;
+}
+
+/* main image */
+.third .right img {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+}
+
+/* image ke upar wala establish since card */
+.third .right .uppar-img {
+    flex-direction: column;
+    border: 2px solid orange;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: absolute;
+    top: 16px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* establish year (1970) */
+.third .right .uppar-img .p2 {
+    color: var(--dark-orange);
+    font-weight: 550;
+    font-size: 24px;
+}
+
+
+/* fresh ingredients, healthy options,
+   perfect occasion wale cards ka container */
+.thirdgrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* single feature card */
+.thirdgrid .thirdgrid3 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 15px 0;
+    background-color: white;
+    width: 70%;
+}
+
+/* card ke image area ki width */
+.thirdgrid .thirdgrid3 .img {
+    width: 50%;
+}
+
+/* card ke text area ki width */
+.thirdgrid .thirdgrid3 .h3 {
+    width: 67%;
+    padding-left: 37px;
+}
+
+/* card icon/image */
+.thirdgrid .thirdgrid3 .img img {
+    width: 100%;
+    max-width: 100px;
+}
+
+
+/* ================= WHY CHOOSE US MOBILE VIEW ================= */
+
+@media (max-width:800px) {
+
+    /* left aur right ko upar niche kar diya */
+    .third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 0 20px;
+    }
+
+    /* left content center me */
+    .third .left {
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* heading responsive size me */
+    .third .left h1 {
+        font-size: 7vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* orange heading responsive size me */
+    .third .left h6 {
+        text-align: center;
+        font-size: 5vw;
+        align-self: center;
+    }
+
+    /* feature cards full width me */
+    .left .thirdgrid .thirdgrid3 {
+        width: 100%;
+    }
+
+    /* image section full width me */
+    .third .right {
+        width: 100%;
+    }
+}
+
+
+/* ================= WHY CHOOSE US TABLET VIEW ================= */
+
+@media (max-width:1120px) {
+
+    /* layout ko column me convert kar diya */
+    .third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 0 20px;
+    }
+
+    /* content center me */
+    .third .left {
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* heading responsive */
+    .third .left h1 {
+        font-size: 7vw;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* sub heading responsive */
+    .third .left h6 {
+        text-align: center;
+        font-size: 5vw;
+        align-self: center;
+    }
+
+    /* cards ko center me arrange kiya */
+    .left .thirdgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* cards ki width badha di */
+    .left .thirdgrid .thirdgrid3 {
+        width: 80%;
+    }
+
+    /* card ke andar content ko evenly spread kiya */
+    .thirdgrid .thirdgrid3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* image section full width me */
+    .third .right {
+        width: 100%;
+    }
+
+    /* establish since text center me */
+    .third .right .uppar-img .p1 {
+        text-align: center;
+    }
+}
+
+/* ================= MENU SECTION ================= */
+
+/* dark background wala menu section */
+.fourth {
+    background-color: var(--gray-green);
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    width: 100%;
+    padding: 80px 150px;
+}
+
+
+/* ================= MENU HEADING ================= */
+
+/* menu section ki heading aur subheading */
+.fourth .section1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Explore Menu Option text */
+.section1 p {
+    color: var(--dark-orange);
+}
+
+/* Best Catering Menus heading */
+.section1 h1 {
+    color: var(--white);
+    font-size: 55px;
+}
+
+
+/* ================= MENU CATEGORY BUTTONS ================= */
+
+/* breakfast, brunch, lunch, dinner buttons */
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+/* single category button */
+.section2 .section-grid1 {
+    color: white;
+    border: 1px solid #5a5a5a;
+    border-bottom: 2px solid #5a5a5a;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* hover karne par orange color */
+.section2 .section-grid1:hover {
+    border-color: var(--dark-orange);
+    color: var(--dark-orange);
+}
+
+
+/* ================= MENU ITEMS SECTION ================= */
+
+/* left image aur right menu items */
+.section3 {
+    display: flex;
+    gap: 50px;
+    margin-top: 90px;
+}
+
+/* left side food image area */
+.section3 .left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* food image */
+.section3 .left img {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+}
+
+/* right side menu items list */
+.section3 .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 50%;
+}
+
+/* ek single menu item */
+.right .section3-grid1 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    gap: 10px;
+}
+
+/* menu item ka naam aur description */
+.section3-grid1 .content {
+    width: 70%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* dish ka naam */
+.section3-grid1 .content h3 {
+    font-size: 21px;
+}
+
+/* dish ki description */
+.section3-grid1 .content p {
+    font-size: 13px;
+}
+
+/* har menu item ke niche divider line */
+.section3-grid1-breaker {
+    height: 1px;
+    background-color: white;
+}
+
+/* dish ki price */
+.section3-grid1 .content-price h1 {
+    color: var(--dark-orange);
+    font-weight: 100;
+}

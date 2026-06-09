@@ -20,6 +20,9 @@ body {
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-color: var(--light-white);
+}
 
 .header {
     width: 100%;
@@ -347,7 +350,8 @@ ul li {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin-top: 40px;
+    background-color: white;
+    padding-top: 40px;
 }
 .clarity1{
     display: flex;
@@ -412,7 +416,7 @@ ul li {
 }
 @media (max-width:938px) {
 .brand-clarity{
-    padding: 0 10px;
+    padding: 20px 10px 13px 10px;
     width: 100%;
 }
 .clar1-head h1{
@@ -449,8 +453,9 @@ ul li {
 }
 
 .imageContainer{
+    background-color: white;
     width: 100%;
-    margin: 80px 0;
+    padding-top: 80px;
 }
 .imageContainer .codingImg{
     width: 100%;
@@ -461,5 +466,186 @@ ul li {
     object-fit: cover;
 }
 
+.clientSays{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 90px 20px 10px 20px ;
+    background-color: var(--light-white);
+}
+.clientSays-heading{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clientSays-heading h1{
+    font-size: 55px;
+    font-weight: 100;
+}
+.clientSays-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.clientCard1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 0;
+}
+.quote h1{
+    text-align: center;
+    font-size: 34px;
+}
+.info{
+    width: 80%;
+}
+.info p{
+   text-align: center; 
+   font-size: 34px;
+}
+.name-spec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name-spec .name{
+    background-color: #FCFFD7;
+}
+.name-spec .name p{
+    font-size: 18px;
+}
+.name-spec .spec p{
+    font-size: 18px;
+}
+
+@media (max-width:938px) {
+    .clientSays-heading{
+        width: 100%;
+    }
+    .clientSays-heading h1{
+        text-align: center;
+    width: 100%;
+    font-size: 9vw;
+    }
+    .clientSays-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.footer{
+    padding: 100px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+.branding-head{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.branding-head h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+}
+.footer-bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    gap: 30px;
+    justify-self: start;
+}
+.footer-links a{
+    color: black;
+    font-size: 18px;
+}
+
+.footer-social{
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+}
+
+.footer-right{
+    
+    justify-self: end;
+}
+.copyright{
+    margin: 10px 0 ;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    background: #FCFFD7;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+@media(max-width:938px){
+    .branding-head{
+        width: 100%;
+    }
+    .branding-head h1{
+        font-size: 9vw;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-right .email{
+ order:2;
+    }
+    .footer-right .copyright{
+order: 5;
+    }
+
+    .footer-right .email{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social{
+        order:1;
+    }
+
+    .footer-image{
+        order:3;
+    }
+
+    .footer-links{
+        order:4;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+}
 
 

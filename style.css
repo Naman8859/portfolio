@@ -175,6 +175,7 @@ ul li {
     .navbar .title ul {
         flex-direction: column;
         gap: 10px;
+        font-weight: 500;
     }
 
     .navbar .connect {
@@ -213,6 +214,17 @@ ul li {
         gap: 20px;
         color: black;
     }
+    button{
+        color: black;
+        font-weight: 500;
+    }
+    .navbar button{
+        color: black;
+        font-weight: 500;
+    }
+    .navbar ul li button {
+    font-weight: 500;
+}
 
     .hero-content {
         margin: 0;

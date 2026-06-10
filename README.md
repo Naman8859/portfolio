@@ -4,7 +4,7 @@ A modern and responsive portfolio website built to showcase my skills, projects,
 
 ## 🚀 Live Demo
 
-🔗 https://your-netlify-link.netlify.app
+🔗 https://namansinghchauhan-portfolio.netlify.app/
 
 ## 📌 About The Project
 

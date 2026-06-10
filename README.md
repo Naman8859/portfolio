@@ -60,7 +60,8 @@ Currently focusing on:
 
 ## 📸 Screenshots
 
-Add screenshots of your portfolio here.
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195748" src="https://github.com/user-attachments/assets/cefbe155-c12b-4c40-b3bd-1859ac9ad1cd" />
+
 
 ## 📬 Connect With Me
 

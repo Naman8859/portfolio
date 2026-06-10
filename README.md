@@ -60,9 +60,21 @@ Currently focusing on:
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot 2026-06-10 195748" src="https://github.com/user-attachments/assets/cefbe155-c12b-4c40-b3bd-1859ac9ad1cd" />
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195702" src="https://github.com/user-attachments/assets/925ddf2d-7acf-4fa2-b62a-8deceaea6b36" />
 
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195711" src="https://github.com/user-attachments/assets/59eda358-2faa-403e-85fb-8d758d3ef351" />
 
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195715" src="https://github.com/user-attachments/assets/388700f9-760b-4ee3-b22c-3bc6be8c710c" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195725" src="https://github.com/user-attachments/assets/b60e13e7-d43d-4e6a-86f8-570d62aa9fef" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195735" src="https://github.com/user-attachments/assets/fbada082-0e6e-42c9-b90c-09023c670638" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195739" src="https://github.com/user-attachments/assets/a621bf26-23a7-4eb6-a5a8-03e562c713d7" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195744" src="https://github.com/user-attachments/assets/d2b803eb-6d07-43bb-96da-058f14c52abe" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-10 195748" src="https://github.com/user-attachments/assets/fd5481fa-e443-421e-91d0-78999c813850" />
 ## 📬 Connect With Me
 
 LinkedIn:

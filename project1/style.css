@@ -985,11 +985,11 @@ button {
     }
 
     .section3-grid1 .content h3 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .section3-grid1 .content p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .section3-grid1 .content {
@@ -997,7 +997,7 @@ button {
     }
 
     .section3-grid1 .content-price h1 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .section2 {
@@ -1021,5 +1021,8 @@ button {
     .section1 p {
     font-size: 4vw;
 }
-
+.section3 .right {
+        width: 100%;
+        padding: 0 10px;
+    }
 }

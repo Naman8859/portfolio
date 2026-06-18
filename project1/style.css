@@ -1018,11 +1018,157 @@ button {
     .section1 h1 {
         font-size: 7vw;
     }
+
     .section1 p {
-    font-size: 4vw;
-}
-.section3 .right {
+        font-size: 4vw;
+    }
+
+    .section3 .right {
         width: 100%;
         padding: 0 10px;
     }
+}
+
+.fifth {
+    background-color: var(--white);
+    min-height: 700px;
+    width: 100%;
+    padding: 80px;
+}
+
+.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fifth-container .heading p {
+    color: var(--dark-orange);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.what-says {
+    font-size: 50px;
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.card {
+    background-color: var(--gray-green);
+    color: white;
+    padding: 50px 40px;
+    width: 40%;
+}
+
+.card .heading h1 {
+    font-size: 18px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+
+.client-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.client-name {
+    color: var(--dark-orange);
+    font-weight: bold;
+}
+
+.quote img {
+    width: 80px;
+    height: 80px;
+}
+
+.next-prev-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.next button,
+.previous button {
+    background-color: #F37D2F;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.next img,
+.previous img {
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width:1120px) {
+    .card2 {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .what-says{
+        width: 100%;
+        font-size: 7vw;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:800px) {
+     .card2 {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .quote{
+        display: none;
+    }
+    .client-info{
+        width: 100%;
+    }
+    .card {
+    padding: 20px 10px;
+}
+.fifth {
+    
+    padding: 20px;
+}
+.what-says{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 7vw;
+}
 }
